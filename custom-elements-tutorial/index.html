@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script src="word-count.js" defer></script>
+    <script src="popup-info-box.js" defer></script>
+    <script src="expanding-list.js" defer></script>
+    <link rel="stylesheet" href="expanding-list.css">
+  </head>
+  <body>
+    <article>
+      <p>
+        Hello there! This is some text. <popup-info data-text="Some info here"></popup-info>
+      </p>
+      <p>
+        There's also text in a second paragraph here. <popup-info img="img/alt.png" data-text="Other info here"></popup-info>
+      </p>
+      <ul is="expanding-list">
+        <li>And here is some content in a list</li>
+        <li>More content!
+          <ul>
+            <li>And even more</li>
+            <li>in a sub list!</li>
+          </ul>
+        </li>
+      </ul>
+      <p is="word-count"></p>
+    </article>
+    
+    
+  </body>
+</html>
